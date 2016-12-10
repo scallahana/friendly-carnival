@@ -1,0 +1,68 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  -moz-box-sizing: inherit;
+       box-sizing: inherit;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+//Article Styling includes new articles show articles 
+//and article index with search styling 
+#new-article {
+	text-align: center;
+	padding: 10px;
+}
+.article-title {
+	text-transform: uppercase;
+}
+#show-article {
+	text-align: center;
+	padding: 10px;
+}
+#all-articles {
+	text-align: center;
+	padding: 10px;
+}
+//Site Component styling includes buttons, pagination, search, and more.
+.line-break {
+	border: 0.5px solid rgb(221, 96, 96);
+    margin: 10px auto;
+    width: 35%;
+}
+
+.btnankor-new-article {
+	outline:none;
+  height: 40px;
+  text-align: center;
+  width: 150px;
+  border-radius:12px;
+  background: #fff;
+  border: 2px solid #cb5c5c;
+  color:#cb5c5c;
+  text-transform: uppercase;
+  letter-spacing:1px;
+  text-shadow:0;
+  font:{
+    size: 16px;
+    weight: 400;
+  }
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover {
+    color:white;
+    background: #cb5c5c;
+	 letter-spacing: 5px
+  }
+  &:active {
+    //letter-spacing: 2px;
+    letter-spacing: 0px ;
+  }
+  &:after {
+    content:" ";
+  }
+}

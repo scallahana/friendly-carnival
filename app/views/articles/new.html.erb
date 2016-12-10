@@ -1,0 +1,19 @@
+<div class="container-fluid" id="new-article">
+<h1>New Article</h1>
+<%= form_for :article, url: articles_path do |f| %>
+	 <p>
+		<h3><%= f.label :title, :class => 'form-label'%></h3>
+		<%= f.text_field :title, :class => 'form-control'%>
+	 </p>
+	 
+	 <p>
+		<h3><%= f.label :text, :class => 'form-label' %></h3>
+		<%= f.text_area :text, :class => 'tinymce', :rows => 10, :cols => 60 %>
+		<%= tinymce %>
+	 </p>
+
+	 <p>
+	 	<%= f.submit 'Publish', :class => 'btnankor-new-article' %>
+	 </p>
+<% end %>
+</div>

@@ -1,0 +1,9 @@
+<div class="container-fluid" id="all-articles">
+	<% @articles.each do |article| %>
+	<h4 class="article-title"><%= article.title %></h4>
+	<div class="line-break">
+	</div>
+	<p><%= article.text.html_safe %></p>
+	<%= button_to 'Read', article_path(article), :class => 'btnankor-new-article', :method => :get %>
+	<% end %>
+</div>
