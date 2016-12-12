@@ -11,8 +11,8 @@
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
 }
-//Article Styling includes new articles show articles 
-//and article index with search styling 
+//Article Styling includes new articles show articles
+//and article index with search styling
 #new-article {
 	text-align: center;
 	padding: 10px;
@@ -52,7 +52,7 @@
     weight: 400;
   }
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.15s ease;
   &:hover {
     color:white;
     background: #cb5c5c;

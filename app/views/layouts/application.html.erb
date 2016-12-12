@@ -12,10 +12,15 @@
 	<div class="container-fluid">
 		<nav class="nav">
 			<ul>
-				<li class="ankor_link"><%= link_to 'Home', articles_path, :class => 'ankor_link' %></li> 
+        <% if user_signed_in? %>
+          Logged in as<strong><%= current_user.email %></strong>
+        <li class="ankor_link"><%= link_to 'Edit Prolfile', edit_user_registration_path, :class => 'ankor_link' %></li>
+        <% else %>
+        <li class="ankor_link"><%= link_to 'Sign Up', new_user_registration_path, :class => 'ankor_link' %></li>
+        <% end %>
+				<li class="ankor_link"><%= link_to 'Home', articles_path, :class => 'ankor_link' %></li>
 				<li class="ankor_link"><%= link_to 'New Article', new_article_path, :class => 'ankor_link' %></li>
-				<li class="ankor_link"><%= link_to 'About me', articles_path, :class => 'ankor_link' %></li>
-			</ul>
+				<li class="ankor_link"><%= link_to 'About me', articles_path, :class => 'ankor_link' %></li>			</ul>
 		</nav>
 	</div>
 	<div class="container" id="body-content">
